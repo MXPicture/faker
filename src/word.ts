@@ -20,10 +20,10 @@ export class Word {
    * @returns a random adjective
    */
   adjective(length?: number): string {
-    var wordList = this.faker.definitions.word.adjective;
+    let wordList = this.faker.definitions.word.adjective;
     if (length) {
       wordList = this.faker.definitions.word.adjective.filter(
-        (word: string) => word.length == length
+        (word) => word.length == length
       );
     }
 
@@ -44,7 +44,7 @@ export class Word {
    * @returns random adverb
    */
   adverb(length?: number): string {
-    var wordList = this.faker.definitions.word.adverb;
+    let wordList = this.faker.definitions.word.adverb;
     if (length) {
       wordList = this.faker.definitions.word.adverb.filter(
         (word: string) => word.length == length
@@ -67,7 +67,7 @@ export class Word {
    * @returns random conjunction
    */
   conjunction(length?: number): string {
-    var wordList = this.faker.definitions.word.conjunction;
+    let wordList = this.faker.definitions.word.conjunction;
     if (length) {
       wordList = this.faker.definitions.word.conjunction.filter(
         (word: string) => word.length == length
@@ -89,7 +89,7 @@ export class Word {
    * @returns random interjection
    */
   interjection(length?: number): string {
-    var wordList = this.faker.definitions.word.interjection;
+    let wordList = this.faker.definitions.word.interjection;
     if (length) {
       wordList = this.faker.definitions.word.interjection.filter(
         (word: string) => word.length == length
@@ -111,7 +111,7 @@ export class Word {
    * @returns random noun
    */
   noun(length?: number): string {
-    var wordList = this.faker.definitions.word.noun;
+    let wordList = this.faker.definitions.word.noun;
     if (length) {
       wordList = this.faker.definitions.word.noun.filter(
         (word: string) => word.length == length
@@ -133,7 +133,7 @@ export class Word {
    * @returns random preposition
    */
   preposition(length?: number): string {
-    var wordList = this.faker.definitions.word.preposition;
+    let wordList = this.faker.definitions.word.preposition;
     if (length) {
       wordList = this.faker.definitions.word.preposition.filter(
         (word: string) => word.length == length
@@ -155,7 +155,7 @@ export class Word {
    * @returns random verb
    */
   verb(length?: number): string {
-    var wordList = this.faker.definitions.word.verb;
+    let wordList = this.faker.definitions.word.verb;
     if (length) {
       wordList = this.faker.definitions.word.verb.filter(
         (word: string) => word.length == length
