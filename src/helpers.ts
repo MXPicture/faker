@@ -280,6 +280,8 @@ export class Helpers {
         }
       }
     } finally {
+      // TODO @Shinigami92 2022-01-21: Check what to do here
+      // eslint-disable-next-line no-unsafe-finally
       return Array.from(set);
     }
   }
@@ -305,7 +307,7 @@ export class Helpers {
       const re = new RegExp('{{' + p + '}}', 'g');
       str = str.replace(
         re,
-        // TODO christopher 2022-01-14: Try to improve the type or maybe use `if`
+        // TODO @Shinigami92 2022-01-14: Try to improve the type or maybe use `if`
         // @ts-expect-error
         data[p]
       );
